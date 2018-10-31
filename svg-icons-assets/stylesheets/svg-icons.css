@@ -1,0 +1,13 @@
+/* Make sure to hide your sprite! */
+.hide { display: none; }
+
+/* Default colouration & size */
+.svgicons-svg-icon { fill: #999; height: 64px; width: 64px; }
+
+/* Social menu */
+.menu-social-menu-container ul ul { list-style: none; margin: 0; padding: 0; }
+.menu-social-menu-container ul li { display: inline-block; }
+.menu-social-menu-container ul a { display: inline-block; line-height: 1; padding: 4px; }
+.menu-social-menu-container ul svg { fill: #555; height: 28px; speak: none; transition: fill .1s ease-in 0; width: 28px; }
+.menu-social-menu-container ul a:hover { background: none; }
+.menu-social-menu-container ul a:hover svg { fill: #333; }
