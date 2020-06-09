@@ -69,7 +69,7 @@ function svgicons_svg_scripts() {
 		endif;
 
 		// Register, localise, and enqueue the script.
-		wp_enqueue_script( 'sharedaddy', site_url( '/wp-content/mu-plugins/svg-icons-assets/js/sharedaddy-svg.js' ), array( 'jquery' ), '20160316', true );
+		wp_enqueue_script( 'sharedaddy', site_url( '/wp-content/mu-plugins/svg-icons-assets/js/sharedaddy-svg.js' ), array( 'jquery' ), '20160316', false );
 }
 add_action( 'wp_enqueue_scripts', 'svgicons_svg_scripts' );
 
@@ -95,7 +95,7 @@ add_action( 'wp_head', 'svgicons_svg_svg4everybody', 20 );
 function svgicons_svg_get_icon( $name, $id = null ) {
 	global $svgicons_svg_sprite_external;
 
-	$attr = 'class="svgicons-svg-icon svgicons-svg-icon-' . $name . '"';
+	$attr = 'role="img" aria-label=' . $name . ' class="svgicons-svg-icon svgicons-svg-icon-' . $name . '"';
 
 	if ( $id ) :
 		$attr .= 'id="' . $id . '"';
